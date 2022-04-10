@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>BTE Consultants</title>
+</head>
+<body>
+    <!-- This is a Mobile first Responsive WebSite -->
+    <!-- start Header Area -->
+    <header class="header">
+        <div class="container">
+            <div class="navigationArea">
+                <div class="logo">
+                    <a href="#"><img src="images/8.jpg" alt="Website Logo"></a>
+                </div>
+                <nav class="nav" id="myNav">
+                    <ul>
+                        <li><a href="#section">Home</a></li>
+                        <li><a href="#main">Service</a></li>
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="clicable" onclick="myFunction()">
+                    <svg viewBox="0 0 100 100">
+                        <line x1="50" y1="20" x2="100" y2="20" stroke="white"></line>
+                        <line x1="10" y1="50" x2="100" y2="50" stroke="white"></line>
+                        <line x1="10" y1="80" x2="100" y2="80" stroke="white"></line>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Intro Part -->
+    <section class="section" id="section">
+        <div class="container">
+            <div class="introPart">
+                <div class="article">
+                    <h2>Byte Consultants</h2>
+                    <p>Software Design Development</p>
+                    <p>Mobile Apps and Website Development</p>
+                    <h4>Products Available at</h4>
+                    <div class="social">
+                        <a href="#"><img src="images/app.png" alt="Apple Logo"> <span>Apple Store</span></a>
+                        <a href="#"><img src="images/logo.png" alt="Playsote Logo"> <span>Play Store</span></a>
+                    </div>
+                </div>
+                <div class="articlePic">
+                     <!-- Full-width images with number and caption text -->
+                     <head>
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                        <style>
+                        * {box-sizing: border-box;}
+                        body {font-family: Verdana, sans-serif;}
+                        .mySlides {display: none;}
+                        img {vertical-align: middle;}
+                        
+                        /* Slideshow container */
+                        .articlePic {
+                          max-width: 1000px;
+                          position: relative;
+                          margin: auto;
+                        }
+                        
+                        /* Caption text */
+                        .text {
+                            color: #f2f2f2;
+                          font-size: 15px;
+                          padding: 8px 12px;
+                          position: absolute;
+                          bottom: 8px;
+                          width: 100%;
+                          text-align: center;
+                          font-weight: bolder;
+                        }
+                        
+                        /* Number text (1/3 etc) */
+                        .numbertext {
+                          color: #f2f2f2;
+                          font-size: 12px;
+                          padding: 8px 12px;
+                          position: absolute;
+                          top: 0;
+                        }
+                        
+                        /* The dots/bullets/indicators */
+                        .dot {
+                          height: 15px;
+                          width: 15px;
+                          margin: 0 2px;
+                          background-color: #bbb;
+                          border-radius: 50%;
+                          display: inline-block;
+                          transition: background-color 0.6s ease;
+                        }
+                        
+                        .active {
+                          background-color: #717171;
+                        }
+                        
+                        /* Fading animation */
+                        .fade {
+                          animation-name: fade;
+                          animation-duration: 1.5s;
+                        }
+                        
+                        @keyframes fade {
+                          from {opacity: .4} 
+                          to {opacity: 1}
+                        }
+                        
+
+                        .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+                        /* On smaller screens, decrease text size */
+                        @media only screen and (max-width: 300px) {
+                          .text {font-size: 11px}
+                        }
+                        </style>
+                        </head>
+                        <body>
+                        
+                    
+                        
+                        <div class="articlePic">
+                        
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="images/1.jpg" style="width:100%">
+                                <div class="text">Web Development</div>
+                              </div>
+                              
+                              <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="images/2.jpg" style="width:100%">
+                                <div class="text">Custom Software</div>
+                              </div>
+                              
+                              <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="images/blog-2.jpg" style="width:100%">
+                                <div class="text">Mobile Apps</div>
+                              </div>
+                              
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                              </div>
+                              <br>
+                              
+                              <div style="text-align:center">
+                                <span class="dot"></span> 
+                                <span class="dot"></span> 
+                                <span class="dot"></span> 
+                              </div>
+                              
+                              <script>
+                              let slideIndex = 0;
+                              showSlides();
+                              
+                              function showSlides() {
+                                let i;
+                                let slides = document.getElementsByClassName("mySlides");
+                                let dots = document.getElementsByClassName("dot");
+                                for (i = 0; i < slides.length; i++) {
+                                  slides[i].style.display = "none";  
+                                }
+                                slideIndex++;
+                                if (slideIndex > slides.length) {slideIndex = 1}    
+                                for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex-1].style.display = "block";  
+                                dots[slideIndex-1].className += " active";
+                                setTimeout(showSlides, 2000); 
+                        
+                              }
+                              
+                              function plusSlides(n){
+                                  let i;
+                                let slides = document.getElementsByClassName("mySlides");
+                                let dots = document.getElementsByClassName("dot");
+                                for (i = 0; i < slides.length; i++) {
+                                  slides[i].style.display = "none";  
+                                }
+                                slideIndex+=n;
+                                if (slideIndex > slides.length) {slideIndex = 1}    
+                                for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex-1].style.display = "block";  
+                                dots[slideIndex-1].className += " active";
+                              }
+                                  
+                              </script>
+                              
+                              
+                              </body>
+
+
+<br>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Intro Part -->
+
+    <!-- start Main Section -->
+    <main class="main" id="main">
+        <div class="container">
+            <div class="serviceHeader">
+                <h2>Our Services</h2>
+            </div>
+            <div class="services">
+                <div class="serviceItem">
+                    <img src="images/custom.png" alt="Service logo">
+                    <h3>Custom Software</h3>
+                    <p>Custom software development using technologies like .NET, Java, Python, etc.</p>
+                    <a href="#">More</a>
+                </div>
+                <div class="serviceItem">
+                    <img src="images/computer.png" alt="Service logo">
+                    <h3>Website Development</h3>
+                    <p>We design and develop responsive and appealing websites at competitive rates.</p>
+                    <a href="#">More</a>
+                </div>
+                <div class="serviceItem">
+                    <img src="images/mobile.png" alt="Service logo">
+                    <h3>Mobile Apps</h3>
+                    <p>We specialise in building mobile apps for Andriod and iOS operating systems.</p>
+                    <a href="#">More</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End Main Section -->
+
+    <!-- Sub Content Start -->
+    <section class="sectionTwo">
+        <div class="container">
+            <div class="subContent">
+                <div class="picArea">
+                    <img src="images/illustration_left.png" alt="Fun and PlayFull Picture">
+                </div>
+                <div class="subArticleArea">
+                    <h2>Fun and Playful App</h2>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sub Content End -->
+
+    <!-- Another Sub Content Start -->
+    <section class="sectionTwo bgColor">
+        <div class="container">
+            <div class="subContent">                
+                <div class="subArticleArea">
+                    <h2>Colorful and Flat UI</h2>
+                    
+                </div>
+                <div class="picArea">
+                    <img src="images/illustration_right.png" alt="Fun and PlayFull Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Another Sub Content End -->
+
+    <!-- Start story Area -->
+    <div class="stories" id="story">
+        <div class="container">
+            <h2>Our Story</h2>
+            <div class="storyArea">      
+                <div class="story">
+                    <div class="storyAvator">   
+                    </div>
+                    <p>BTE Consultants is a boutique design and development studio based in Melbourne, Australia. We specialise in custom software application development, mobile technologies like android and iOS app development, technologies like Java, Kotlin, Swift, Flutter, and .NET, and API development. We also specilaise in creating aesthetic visual designs and providing UX consultantions for software applications.</p>
+                    </div>
+
+               </div>
+                    </div>            
+               
+            </div>
+    <!-- End story Area -->
+
+
+    <!-- Contact Area  -->    
+    <div class="contactArea" id="contact">
+        <div class="container">
+            <div class="contactForm">
+                <div class="contactLogo">
+                    <img src="images/contact.jpg" alt="Contact form Logo">
+                </div>
+                <div class="formArea">
+                    <h2>Get in Touch</h2>
+                    <p>Email: <a href="mailto:xxx@gmail.com">bte@gmail.com</a></p>
+                    
+                    <p>Tel: <a href="tel:61400000000">+61-400000000</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Area End -->
+   
+
+    <!-- Footer Area  -->    
+    <footer class="footer">
+        <div class="container">
+            <div class="copyRight">
+                <p>&copy; Copyright 2022 | BTE Consultants All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <div>
+        <button onclick="returnTop()" id="btnTop" title="Back to top">Back to top</button>
+   </div>
+    <script>
+      
+
+        function myFunction() {
+            var element = document.getElementById("myNav");
+            element.classList.toggle("mystyle");
+        }
+        
+
+        window.onscroll = function() {
+ scrollFunction()
+ };
+  
+ function scrollFunction() {
+ console.log(121);
+ if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+ document.getElementById("btnTop").style.display = "block";
+} else {
+ document.getElementById("btnTop").style.display = "none";
+ }
+}
+
+function returnTop() {
+ document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+</script>
+
+</body>
+</html>

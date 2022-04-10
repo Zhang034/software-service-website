@@ -1,0 +1,123 @@
+@media screen and (max-width: 992px){
+    .main .services .serviceItem {
+        width: 48%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 855px){
+    .introPart {
+        flex-direction: column-reverse;
+    }
+
+    .introPart .article {
+        max-width: 100%;
+    }
+
+    .introPart .articlePic {
+        width: 100%;
+    }
+
+
+    .developers .developerArea .developer {
+        width: 45%;
+        margin-bottom: 90px;
+    }
+
+    .developers .developerArea {
+        padding: 0 60px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navigationArea {
+        display: block;
+        padding: 0 30px;
+    }
+    .header {
+        position: relative;
+    }
+
+    .nav ul {
+        margin-top: 15px;
+    }
+
+    .nav ul li{
+        width: 100%;
+        background-color: #323f4e;
+        margin: 5px 0;
+        border-bottom: 1px solid #45aff4;
+        cursor: pointer;
+    }
+
+    .nav ul li a {        
+        color: #fff;
+    }
+
+    .main .services .serviceItem {
+        width: 100%;
+    }
+
+    .main .services .serviceItem p {
+        padding: 0 70px;
+    }
+
+    .contactArea .contactForm {
+        flex-direction: column;
+    }
+
+    .contactArea .contactForm .contactLogo {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .contactArea .contactForm .formArea {
+        width: 100%;
+    }
+
+    .contactArea .contactForm .formArea form {
+        width: 100%;
+    }
+
+    .clicable {
+        display: block;
+        position: absolute;
+        top: 28px;
+        right: 50px;
+    }
+
+    .nav {
+        max-width: calc(100%);
+        display: none;
+    }
+
+    .mystyle {
+        display: block;
+    }
+}
+@media screen and (max-width: 556px){
+    .sectionTwo .subContent {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+    .sectionTwo .subContent .picArea {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sectionTwo .subContent .subArticleArea {
+        width: 100%;
+    }
+
+    .bgColor .subContent {
+        flex-direction: column-reverse;
+        padding: 0 30px;
+    }
+
+    .developers .developerArea .developer {
+        width: 100%;
+    }
+
+}
